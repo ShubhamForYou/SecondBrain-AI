@@ -1,5 +1,6 @@
 import { Button } from "./components/ui/Button";
 import { PlusIcon } from "./icons/PlusIcon";
+import { ShareIcon } from "./icons/ShareIcon";
 
 function App() {
   return (
@@ -9,16 +10,16 @@ function App() {
           variant="primary"
           size="sm"
           text="click me"
-          startIcon={<PlusIcon size="sm" />}
-          endIcon={"-"}
+          startIcon={<ShareIcon size="sm" />}
+          endIcon={<PlusIcon size="sm" />}
         />
 
         <Button
           variant="secondary"
           size="sm"
           text="click me"
-          startIcon={<PlusIcon size="sm" />}
-          endIcon={"-"}
+          startIcon={<ShareIcon size="lg" />}
+          endIcon={<PlusIcon size="lg" />}
         />
 
         <Button
@@ -26,7 +27,7 @@ function App() {
           size="md"
           text="click me"
           startIcon={<PlusIcon size="md" />}
-          endIcon={"-"}
+          endIcon={<PlusIcon size="md" />}
         />
 
         <Button
@@ -34,7 +35,7 @@ function App() {
           size="md"
           text="click me"
           startIcon={<PlusIcon size="md" />}
-          endIcon={"-"}
+          endIcon={<PlusIcon size="md" />}
         />
 
         <Button
@@ -42,7 +43,7 @@ function App() {
           size="lg"
           text="click me"
           startIcon={<PlusIcon size="lg" />}
-          endIcon={"-"}
+          endIcon={<ShareIcon size="lg" />}
         />
 
         <Button
@@ -50,7 +51,7 @@ function App() {
           size="lg"
           text="click me"
           startIcon={<PlusIcon size="lg" />}
-          endIcon={"-"}
+          endIcon={<Button variant="primary" size="md" text="inner" />}
         />
       </div>
     </>
