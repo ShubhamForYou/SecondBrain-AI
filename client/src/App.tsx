@@ -1,57 +1,41 @@
 import { Button } from "./components/ui/Button";
+import { Card } from "./components/ui/Card";
 import { PlusIcon } from "./icons/PlusIcon";
 import { ShareIcon } from "./icons/ShareIcon";
 
 function App() {
   return (
     <>
-      <div className=" h-screen ">
+      <div className="flex gap-4 justify-end p-2">
         <Button
-          variant="primary"
-          size="sm"
-          text="click me"
-          startIcon={<ShareIcon size="sm" />}
-          endIcon={<PlusIcon size="sm" />}
-        />
-
-        <Button
+          text="Share Brain"
           variant="secondary"
-          size="sm"
-          text="click me"
-          startIcon={<ShareIcon size="lg" />}
-          endIcon={<PlusIcon size="lg" />}
+          size="md"
+          startIcon={<ShareIcon size="md" />}
         />
-
         <Button
           variant="primary"
           size="md"
-          text="click me"
           startIcon={<PlusIcon size="md" />}
-          endIcon={<PlusIcon size="md" />}
+          text="Add Content"
         />
+      </div>
 
-        <Button
-          variant="secondary"
-          size="md"
-          text="click me"
-          startIcon={<PlusIcon size="md" />}
-          endIcon={<PlusIcon size="md" />}
+      <div className="flex items-start gap-4 ">
+        <Card
+          title="Managing"
+          link="https://x.com/k_dense_ai/status/2001752844958076967"
+          type="twitter"
         />
-
-        <Button
-          variant="primary"
-          size="lg"
-          text="click me"
-          startIcon={<PlusIcon size="lg" />}
-          endIcon={<ShareIcon size="lg" />}
+        <Card
+          title="What is MPC"
+          link="https://www.youtube.com/watch?v=cqDQV5g7zHo"
+          type="youtube"
         />
-
-        <Button
-          variant="secondary"
-          size="lg"
-          text="click me"
-          startIcon={<PlusIcon size="lg" />}
-          endIcon={<Button variant="primary" size="md" text="inner" />}
+        <Card
+          title="Managing Deepagents Memory"
+          link="https://x.com/k_dense_ai/status/2001752844958076967"
+          type="twitter"
         />
       </div>
     </>
