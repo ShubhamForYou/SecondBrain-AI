@@ -9,9 +9,9 @@ interface ButtonProps {
   onClick?: () => void;
 }
 const sizeStyles = {
-  sm: "px-2 py-1 text-sm rounded-sm",
+  sm: "px-2 py-1 text-sm  rounded-sm",
   md: "px-4 py-2 text-base rounded-md",
-  lg: "px-6 py-3 text-lg rounded-lg",
+  lg: "px-6 py-3 text-lg rounded-lg ",
 };
 const variantStyles = {
   primary: "bg-purple-600 text-white  ",
@@ -20,9 +20,12 @@ const variantStyles = {
 export const Button = (props: ButtonProps) => {
   return (
     <button
-      className={`${sizeStyles[props.size]} ${variantStyles[props.variant]}`}
+      className={`w-fit ${sizeStyles[props.size]} ${
+        variantStyles[props.variant]
+      }`}
+      onClick={props.onClick}
     >
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 justify-center">
         {props.startIcon}
         {props.text}
         {props.endIcon}
