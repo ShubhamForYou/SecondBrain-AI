@@ -14,7 +14,7 @@ interface CardProps {
 }
 export const Card = ({ type, title, link }: CardProps) => {
   return (
-    <div className="bg-white rounded-md border border-[#f1f6f4] shadow-md w-72 min-h-48 max-h-92  ">
+    <div className="bg-white rounded-md border border-[#f1f6f4] shadow-md min-w-72 min-h-52 max-h-96 hover:bg-gray-300 hover:min-h-96 hover:min-w-96 transition-all duration-1000 delay-500">
       <div className="flex justify-between ">
         <div className="flex items-center gap-4 ml-4 text-gray-500 mt-4">
           <ShareIcon size="md" />
@@ -27,7 +27,7 @@ export const Card = ({ type, title, link }: CardProps) => {
           <ShareIcon size="md" />
         </div>
       </div>
-      <div className="p-4">
+      <div className="p-2">
         {type === "youtube" && (
           <iframe
             className="w-full "
@@ -40,7 +40,7 @@ export const Card = ({ type, title, link }: CardProps) => {
         )}
 
         {type === "twitter" && (
-          <div className="h-56 overflow-y-scroll overflow-x-hidden">
+          <div className="h-56 hover:h-80 overflow-y-scroll transition-all duration-1000 delay-500 overflow-x-hidden">
             <blockquote className="twitter-tweet">
               <a href={link.replace("x.com", "twitter.com")}></a>
             </blockquote>

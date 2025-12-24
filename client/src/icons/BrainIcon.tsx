@@ -14,7 +14,7 @@ export const BrainIcon = ({ size }: BrainIconProps) => {
       id="Layer_1"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#5046e4"
+      stroke="currentColor"
       className={sizeStyles[size]}
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
