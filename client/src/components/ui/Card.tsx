@@ -10,7 +10,10 @@ interface CardProps {
     | "video"
     | "canvas"
     | "notes"
-    | "pdf";
+    | "pdf"
+    | "image"
+    | "text"
+    | "audio";
 }
 export const Card = ({ type, title, link }: CardProps) => {
   return (

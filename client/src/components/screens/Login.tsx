@@ -18,7 +18,7 @@ export function Login() {
         username,
         password,
       });
-      localStorage.setItem("jwt", `Bearer ${res.data.token}`);
+      localStorage.setItem("jwt", res.data.token);
 
       alert("User logged in successfully ✔️");
       navigate("/dashboard");

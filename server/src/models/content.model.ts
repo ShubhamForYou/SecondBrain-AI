@@ -7,6 +7,9 @@ const contentTypes = [
   "notes",
   "text",
   "pdf",
+  "twitter",
+  "youtube",
+  "canvas",
 ];
 const schema = new mongoose.Schema(
   {
@@ -30,7 +33,7 @@ const schema = new mongoose.Schema(
       required: true,
     },
   },
-  { timestamps: true },
+  { timestamps: true }
 );
 const Content = mongoose.model("Content", schema);
 export default Content;
